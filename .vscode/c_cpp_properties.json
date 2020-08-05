@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "browse": {
+                "path": [
+                    "/usr/local/include",
+                    "/usr/include",
+                    "/home/atas/catkin_ws/devel",
+                    "/opt/ros/melodic/include",
+                    "/usr/include/x86_64-linux-gnu/qt5/QtCore",
+                    "/usr/include/x86_64-linux-gnu/qt5",
+                    "/usr/include/pcl",
+                    "/usr/include/pcl",
+                    "/home/atas/clearpath_ws/src/openvino_maskrcnn_inference/include",
+                    "/opt/intel/openvino/inference_engine/include",
+                    "/opt/ros/melodic/include",
+                    "/usr/include",
+                    "/usr/lib",
+                    "/usr/share",
+                    "/usr/include/gazebo-9/gazebo"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/atas/clearpath_ws/src/openvino_maskrcnn_inference/include",
+                "/opt/intel/openvino/inference_engine/include",
+                "/opt/ros/melodic/include",
+                "/usr/include/",
+                "/usr/lib/",
+                "/usr/share/",
+                "/usr/include/x86_64-linux-gnu/qt5/",
+                "/usr/include/gazebo-9/gazebo/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
