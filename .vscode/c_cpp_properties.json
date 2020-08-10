@@ -12,7 +12,7 @@
                     "/usr/include/x86_64-linux-gnu/qt5",
                     "/usr/include/pcl",
                     "/usr/include/pcl",
-                    "/home/atas/clearpath_ws/src/openvino_maskrcnn_inference/include",
+                    "/home/atas/staubli_ws/src/ROS_maskrcnn_openvino/include",
                     "/opt/intel/openvino/inference_engine/include",
                     "/opt/ros/melodic/include",
                     "/usr/include",
@@ -23,7 +23,7 @@
                 "limitSymbolsToIncludedHeaders": true
             },
             "includePath": [
-                "/home/atas/clearpath_ws/src/openvino_maskrcnn_inference/include",
+                "/home/atas/staubli_ws/src/ROS_maskrcnn_openvino/include",
                 "/opt/intel/openvino/inference_engine/include",
                 "/opt/ros/melodic/include",
                 "/usr/include/",
