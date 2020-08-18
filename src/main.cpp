@@ -58,9 +58,7 @@ MaskRCNNInferenceOpenvino::MaskRCNNInferenceOpenvino(ros::NodeHandle *nh_ptr_) :
     std::cout << "InferenceEngine: " << InferenceEngine::GetInferenceEngineVersion() << std::endl;
 
     /** Read network model **/
-    network = ie.ReadNetwork(
-        "/home/atas/staubli_ws/src/ROS_maskrcnn_openvino/"
-        "maksrcnn_mo/frozen_inference_graph.xml");
+    network = ie.ReadNetwork("/home/atas/staubli_ws/src/PICK_PLACE_with_ROS_on_STAUBLI_ARM/ROS_maskrcnn_openvino/maksrcnn_mo/frozen_inference_graph.xml");
 
     // add DetectionOutput layer as output so we can get detected boxes and their
     // probabilities
