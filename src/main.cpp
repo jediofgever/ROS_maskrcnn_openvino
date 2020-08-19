@@ -8,6 +8,7 @@
  * @example mask_rcnn_demo/main.cpp
  */
 #include <cv_bridge/cv_bridge.h>
+#include <ros/package.h>
 #include <ros/ros.h>
 #include <opencv2/opencv.hpp>
 
@@ -58,7 +59,9 @@ MaskRCNNInferenceOpenvino::MaskRCNNInferenceOpenvino(ros::NodeHandle *nh_ptr_) :
     std::cout << "InferenceEngine: " << InferenceEngine::GetInferenceEngineVersion() << std::endl;
 
     /** Read network model **/
-    network = ie.ReadNetwork("/home/atas/staubli_ws/src/PICK_PLACE_with_ROS_on_STAUBLI_ARM/ROS_maskrcnn_openvino/maksrcnn_mo/frozen_inference_graph.xml");
+    std::string this_package_path = ros::package::getPath("openvino_maskrcnn_inference");
+    std::string network_path = this_package_path + "/maksrcnn_mo/frozen_inference_graph.xml";
+    network = ie.ReadNetwork(network_path.c_str());
 
     // add DetectionOutput layer as output so we can get detected boxes and their
     // probabilities
